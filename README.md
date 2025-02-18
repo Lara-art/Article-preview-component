@@ -10,10 +10,10 @@ This is my solution to the <a href="https://www.frontendmentor.io/challenges/art
 <table>
   <tr>
     <td style="width: 75%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Desktop.png" alt="Vista de Escritorio" style="width: 100%;"/></td>
-    <td style="width: 25%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Desktop-active.png"  alt="Vista de Escritorio activo" style="width: 100%;"/></td>
+    <td style="width: 25%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Mobile.png" alt="Vista Móvil" style="width: 100%;"/></td>
   </tr>
   <tr>
-    <td style="width: 75%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Mobile.png" alt="Vista Móvil" style="width: 100%;"/></td>
+    <td style="width: 75%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Desktop-active.png"  alt="Vista de Escritorio activo" style="width: 100%;"/></td>
     <td style="width: 25%;"><img src="https://github.com/Lara-art/Article-preview-component/blob/main/screenshot/Mobile-active.png"  alt="Vista Móvil activo" style="width: 100%;"/></td>
   </tr>
 </table>
