@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="" />
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lara Mesa Cubas">
+  <title>Frontend Mentor | Preview Component</title>
+  <meta name="descripthion" content="Octavo desafío de la página Frontend Mentor.">
+  <meta name="robots" content="noarchive">
+</head>
+
+<body>
+  <main class="container">
+    <div class="photo"></div>
+    <div class="information">
+      <div class="text">
+        <h1> Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h1>
+        <p> Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+      </div>
+
+      <div class="user">
+        <div class="profile">
+          <img src="images/avatar-michelle.jpg" alt="photo user Michelle" title="photo user Michelle">
+          <div class="info">
+            <span class="name">Michelle Appleton</span>
+            <span class="date">28 Jun 2020</span>
+          </div>
+        </div>
+
+        <div class="icons">
+          <span>SHARE</span>
+          <img src="images/icon-facebook.svg" alt="Facebook" title="Facebook">
+          <img src="images/icon-twitter.svg" alt="Twitter" title="Twitter">
+          <img src="images/icon-pinterest.svg" alt="Pinterest" title="Pinterest">
+        </div>
+
+        <div class="share" onclick="share()"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+            <path fill="#6E8098"
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Lara Mesa Cubas</a>.
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    function share() {
+      let profile = document.querySelector('.profile');
+      let icons = document.querySelector('.icons');
+      let user = document.querySelector('.user');
+      let share = document.querySelector('.share');
+
+      if (icons.style.display === 'none') {
+        icons.style.display = 'flex';
+        if (window.matchMedia("(max-width: 600px)").matches) {
+          profile.style.display = 'none';
+          user.style.backgroundColor = '#48546a';
+
+        }
+      } else {
+        icons.style.display = 'none';
+        profile.style.display = 'flex';
+        user.style.backgroundColor = '#ffffff';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

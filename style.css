@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --color-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --color-Grayish-Blue: #48546a;
+    --color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --color-White: #ffffff;
+    --color-a: hsl(228, 45%, 44%);
+    --radius-photo: 50px;
+    --radius-grid: 10px;
+    --weight500: 500;
+    --weight700: 700;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Manrope", "sans-serif";
+    font-size: 13px;
+    font-weight: var(--weight500);
+    place-content: center;
+    color: var(--color-Very-Dark-Grayish-Blue);
+    background-color: var(--color-Light-Grayish-Blue);
+    height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1 {
+    font-weight: var(--weight700);
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--color-a);
+    font-size: 11px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    background-color: var(--color-White);
+    border-radius: var(--radius-grid);
+    box-shadow: var(--color-Very-Dark-Grayish-Blue);
+    max-width: 850px;
+    margin: auto;
+}
+
+.photo {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/drawers.jpg);
+    border-radius: var(--radius-grid) 0 0 var(--radius-grid);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.text,
+.user,
+.profile,
+.info,
+.icons {
+    display: flex;
+}
+
+.text {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.2rem;
+}
+
+.user {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+
+    & img {
+        width: 50px;
+        border-radius: var(--radius-photo);
+    }
+}
+
+.info {
+    flex-direction: column;
+}
+
+.name {
+    font-weight: var(--weight700);
+}
+
+.icons {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius-grid);
+    justify-content: space-between;
+    background-color: var(--color-Grayish-Blue);
+
+    & img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    & span {
+        color: var(--color-Light-Grayish-Blue);
+        letter-spacing: 2px;
+    }
+}
+
+.share {
+    cursor: pointer;
+    background-color: var(--color-Light-Grayish-Blue);
+    padding: 0.5rem;
+    margin: 2rem;
+    border-radius: var(--radius-photo);
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-device-width: 325px) and (max-device-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 2fr;
+    }
+
+    .photo {
+        border-radius: var(--radius-grid) var(--radius-grid) 0 0;
+    }
+}
+
+@media (min-device-width: 600px) {
+    .share {
+        position: relative;
+    }
+
+    .icons {
+        position: absolute;
+        bottom: 70%;
+        left: 70%;
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+
+    .icons::after {
+        content: "";
+        position: absolute;
+        bottom: -50%;
+        left: 52%;
+        transform: translateX(-50%);
+        border-width: 15px;
+        border-style: solid;
+        border-color: var(--color-Grayish-Blue) transparent transparent transparent;
+    }
+}
