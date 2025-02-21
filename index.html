@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Lara Mesa Cubas">
+  <script src="myscripts.js"></script>
   <title>Frontend Mentor | Preview Component</title>
   <meta name="descripthion" content="Octavo desafío de la página Frontend Mentor.">
   <meta name="robots" content="noarchive">
@@ -55,29 +56,5 @@
       Coded by <a href="#">Lara Mesa Cubas</a>.
     </div>
   </footer>
-
-  <script type="text/javascript">
-    function share() {
-      let profile = document.querySelector('.profile');
-      let icons = document.querySelector('.icons');
-      let user = document.querySelector('.user');
-      let share = document.querySelector('.share');
-
-      if (icons.style.display === 'none') {
-        icons.style.display = 'flex';
-        if (window.matchMedia("(max-width: 600px)").matches) {
-          profile.style.display = 'none';
-          user.style.backgroundColor = '#48546a';
-
-        }
-      } else {
-        icons.style.display = 'none';
-        profile.style.display = 'flex';
-        user.style.backgroundColor = '#ffffff';
-      }
-    }
-  </script>
-
 </body>
-
 </html>
