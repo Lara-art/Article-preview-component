@@ -55,6 +55,7 @@ a {
     box-shadow: var(--color-Very-Dark-Grayish-Blue);
     max-width: 850px;
     margin: auto;
+    box-shadow: 0px 0px 15px -10px var(--color-Very-Dark-Grayish-Blue);
 }
 
 .photo {
